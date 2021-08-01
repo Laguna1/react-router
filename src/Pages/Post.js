@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Post() {
+function Post({match}) {
     return (
       <div className="post">
-        <h2>Id is =</h2>
+        <h2>Id is = {match.params.id}</h2>
       </div>
     );
   }
