@@ -1,12 +1,17 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 
 function Post() {
     const { id } = useParams();
+
+    const query = new URLSearchParams(useLocation().search);
     return (
-      <div className="post">
+      <>
         <h2>Id is = {id}</h2>
-      </div>
+        <br></br>
+        <h2>{query.get('first')}</h2>
+        <h2>{query.get('last')}</h2>
+      </>
     );
   }
   
