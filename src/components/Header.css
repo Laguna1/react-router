@@ -1,3 +1,19 @@
 .header {
     color: green;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    width: 300px;
+    margin-top: 40px;
+}
+
+.nav-links li a {
+    text-decoration: none;
 }
