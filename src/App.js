@@ -21,7 +21,7 @@ const [login, setLogin] = useState(false);
         <Route path="/" component={Home} exact />
         <Route path="/about" component={About} />
         <Route path="/profile">
-          {login? <Profile /> : <Redirect to="/" />}
+          <Profile login={login}/>
         </Route>
         <Route path="/post/:id" component={Post} />
         <Route component={NotFound} />
