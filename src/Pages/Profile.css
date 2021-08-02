@@ -1,0 +1,14 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.profile h1 {
+    margin-left: 84px;
+}
+
+.prof-links {
+    margin-top: 0;
+}
