@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-[Source](https://www.freecodecamp.org/news/learn-react-router/)
+[React router tutorial](https://www.freecodecamp.org/news/learn-react-router/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
