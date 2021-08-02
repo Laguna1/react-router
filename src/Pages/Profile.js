@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react';
-import { Switch, Link , useHistory, Route } from 'react-router-dom';
+import { Switch, Link , useHistory, Route, useRouteMatch } from 'react-router-dom';
+import ViewProfile from '../components/ViewProfile';
+import EditProfile from '../components/EditProfile';
 
 const Profile = ({login}) => {
   const history = useHistory();
@@ -10,22 +12,24 @@ const Profile = ({login}) => {
     }
   }, [login, history]);
 
+  const { path, url } = useRouteMatch();
+
     return (
       <>
       <div className="profile">
         <h1>Profile Page</h1>
         <ul>
           <li>
-            <Link to="/viewprofile">View Profile</Link>
+            <Link to={`${url}/viewprofile`}>View Profile</Link>
           </li>
           <li>
-            <Link to="/editprofile">Edit Profile</Link>
+            <Link to={`${url}/editprofile`}>Edit Profile</Link>
           </li>
         </ul>
 
         <Switch>
-          <Route path="/viewprofile" />
-          <Route path="/editprofile" />
+          <Route path={`${path}/viewprofile`} component={ViewProfile} />
+          <Route path={`${path}/editprofile`} component={EditProfile} />
         </Switch>
       </div>
       </>
