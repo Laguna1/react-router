@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, useParams } from 'react-router-dom';
 
-function Post() {
+const Post = () => {
     const { id } = useParams();
 
     const query = new URLSearchParams(useLocation().search);
