@@ -1,10 +1,11 @@
 import React from 'react';
+import '../App.css';
 
 const ViewProfile = () => {
     return (
         <>
           <div>
-            <h2>View Profile Page</h2>
+            <h3>View Profile Page</h3>
           </div>
         </>
     )

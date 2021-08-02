@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Switch, Link , useHistory, Route, useRouteMatch } from 'react-router-dom';
 import ViewProfile from '../components/ViewProfile';
 import EditProfile from '../components/EditProfile';
+import './Profile.css';
 
 const Profile = ({login}) => {
   const history = useHistory();
@@ -18,7 +19,7 @@ const Profile = ({login}) => {
       <>
       <div className="profile">
         <h1>Profile Page</h1>
-        <ul>
+        <ul className="nav-links prof-links">
           <li>
             <Link to={`${url}/viewprofile`}>View Profile</Link>
           </li>
